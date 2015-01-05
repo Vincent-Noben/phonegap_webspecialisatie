@@ -1,2 +1,2 @@
-c:\Users\vincent\Phonegap\webspecialisatie-fresh\platforms\android\ant-build\AndroidManifest.xml : \
-c:\Users\vincent\Phonegap\webspecialisatie-fresh\platforms\android\AndroidManifest.xml \
+c:\Users\vincent\Phonegap\phonegap_webspecialisatie\webspecialisatie-applicatie\platforms\android\ant-build\AndroidManifest.xml : \
+c:\Users\vincent\Phonegap\phonegap_webspecialisatie\webspecialisatie-applicatie\platforms\android\AndroidManifest.xml \
