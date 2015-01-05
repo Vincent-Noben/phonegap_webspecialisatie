@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+		<!-- JQUERY MOBILE -->
+		<!-- FontAwesome -->
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<!-- jQueryMobile core CSS -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<!-- nativeDroid core CSS -->
+		<link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+		<!-- nativeDroid: Light/Dark -->
+		<link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css"	id='jQMnDTheme' />
+		<!-- nativeDroid: Color Schemes -->
+		<link rel="stylesheet" href="css/jquerymobile.nativedroid.color.blue.css" id='jQMnDColor' />
+
+		<!-- jQueryMobileJS - Javascript files -->
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+		<title>Phonegap</title>
+	</head>
+	<body data-theme='b'>
+
+		<!-- ~~~~~~~~~~~~~~~~~~~ -->
+		<!-- ~~ CONTENT START ~~ -->
+		<!-- ~~~~~~~~~~~~~~~~~~~ -->
+
+		<!-- Landing/plugin page -->
+		<div data-role="page" id="plugins" >
+			<div data-role="main" class="ui-content" data-theme="b">
+				<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+					<div data-role="navbar">
+						<ul data-theme="b">
+							<li><a href="#docs" data-transition="none">Docs</a></li>
+							<li><a href="#plugins" class="active" data-transition="none">Plugins</a></li>
+							<li><a href="#settings" data-transition="none"><i class='fa fa-gears'></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<ul data-role="listview" data-theme="b">
+					<li data-icon='false'><a href="#plug1" data-transition="slide"><i class='fa fa-camera'></i>Camera</a></li>
+					<li data-icon='false'><a href="#plug2" data-transition="slide"><i class='fa fa-globe'></i>Geolocation</a></li>
+					<li data-icon='false'><a href="#plug3" data-transition="slide"><i class='fa fa-bell-o'></i>Dialogs</a></li>
+					<li data-icon='false'><a href="#plug4" data-transition="slide"><i class='fa fa-bullseye'></i>Vibration</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Docs page -->
+		<div data-role="page" id="docs" >
+			<div data-role="main" class="ui-content" data-theme="b">
+				<div data-role="header" data-theme="b">
+					<div data-role="navbar" data-position="fixed">
+						<ul data-theme="b">
+							<li><a href="#docs" class="active" data-transition="none">Docs</a></li>
+							<li><a href="#plugins" data-transition="none">Plugins</a></li>
+							<li><a href="#settings" data-transition="none"><i class='fa fa-gears'></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<ul data-role="listview" data-theme="b">
+					<li data-icon='false'><a href="#doc1" data-transition="slide"><i class='fa fa-code'></i>Install Node.js</a></li>
+					<li data-icon='false'><a href="#doc2" data-transition="slide"><i class='fa fa-code'></i>Install Phonegap</a></li>
+					<li data-icon='false'><a href="#doc2" data-transition="slide"><i class='fa fa-code'></i>Phonegap build</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Settings page -->
+		<div data-role="page" id="settings" >
+			<div data-role="main" class="ui-content" data-theme="b">
+				<div data-role="header" data-theme="b">
+					<div data-role="navbar" data-position="fixed">
+						<ul data-theme="b">
+							<li><a href="#docs" data-transition="none">Docs</a></li>
+							<li><a href="#plugins" data-transition="none">Plugins</a></li>
+							<li><a href="#settings" class="active" data-transition="none"><i class='fa fa-gears'></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="inset" data-inset="true">
+					<h2>This... is settings... you dont mess with settings !!!</h2>
+				</div>
+			</div>
+		</div>
+		
+		<!-- ~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- ~~~ DOC SUBVIEWS ~~~ -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~ -->
+		
+		<!-- DOC1: install NodeJS -->
+		<div data-role="page" id="doc1" >
+			<div data-role="main" class="ui-content" data-theme="b">
+				<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+					<div data-role="navbar">
+						<ul data-theme="b">
+							<li><a href="#docs" data-transition="slide" data-direction="reverse"><i class="fa fa-bars"></i> Docs</a></li>
+							<li><a href="#doc2" data-transition="slide">Next <i class="fa fa-arrow-right"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="docdetails">
+					<h1>Install NodeJS</h1>
+					<hr>
+					<ul>
+						<li>Browse to nodejs.org</li>
+						<li>Inform yourself about NodeJS</li>
+						<li>Click the install button</li>
+						<li>Download and run the installation file</li>
+						<li>Click next/accept/continue/... <br>and wait for nodejs to finish installation</li>
+						<li>Open your terminal/commandprompt</li>
+						<li>Type the following command to test Node is up and running
+							<pre>
+								$ node -v
+							</pre>
+						</li>
+						<li>Type the following command to test Node Package Manager is up and running
+							<pre>
+								$ npm -v
+							</pre>
+						</li>
+						<li class="successmessage"><i class="fa fa-check"></i> Well done</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- DOC2: install phonegap -->
+		<div data-role="page" id="doc2" >
+			<div data-role="main" class="ui-content" data-theme="b">
+				<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+					<div data-role="navbar">
+						<ul data-theme="b">
+							<li><a href="#docs" data-transition="slide" data-direction="reverse"><i class="fa fa-bars"></i> Docs</a></li>
+							<li><a href="#doc3" data-transition="slide">Next <i class="fa fa-arrow-right"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="docdetails">
+					<h1>Install Phonegap</h1>
+					<hr>
+					<ul>
+						<li>Do something</li>
+						<li class="successmessage"><i class="fa fa-check"></i> Well done</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- DOC3: phonegap build -->
+		<div data-role="page" id="doc3" >
+			<div data-role="main" class="ui-content" data-theme="b">
+				<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+					<div data-role="navbar">
+						<ul data-theme="b">
+							<li><a href="#docs" data-transition="slide" data-direction="reverse"><i class="fa fa-bars"></i> Docs</a></li>
+							<li><a href="#doc4" data-transition="slide">Next <i class="fa fa-arrow-right"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="docdetails">
+					<h1>Phonegap Build</h1>
+					<hr>
+					<ul>
+						<li>Do something</li>
+						<li class="successmessage"><i class="fa fa-check"></i> Well done</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- ~~~ PLUGON SUBVIEWS ~~~ -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<!-- PLUG1: Camera -->
+		<div data-role="page" id="plug1" >
+			<div data-role="main" class="ui-content" data-theme="b">
+				<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+					<div data-role="navbar">
+						<ul data-theme="b">
+							<li><a href="#plugins" data-transition="slide" data-direction="reverse"><i class="fa fa-bars"></i> Plugins</a></li>
+							<li><a href="#plug2" data-transition="slide">Geolocation <i class="fa fa-arrow-right"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="docdetails">
+					<h1>Camera</h1>
+					<hr>
+					<button id="cameraTake"><i class="fa fa-camera"></i> Take a picture</button>
+					<button id="cameraSelect"><i class="fa fa-th-large"></i> Select a picture</button>
+					<img class="PGimage" id="cameraTaken" width="90%" alt="Taken picture comes here">
+					<img class="PGimage" id="cameraSelected" width="90%" alt="Selected picture comes here">
+					<div class="successmessage"><i class="fa fa-check"></i> Well done</div>
+				</div>
+			</div>
+		</div>
+		<!-- PLUG2: Geolocation -->
+		<div data-role="page" id="plug2" >
+			<div data-role="main" class="ui-content" data-theme="b">
+				<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+					<div data-role="navbar">
+						<ul data-theme="b">
+							<li><a href="#plugins" data-transition="slide" data-direction="reverse"><i class="fa fa-bars"></i> Plugins</a></li>
+							<li><a href="#plug3" data-transition="slide">Dialogs <i class="fa fa-arrow-right"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="docdetails">
+					<h1>Geolocation</h1>
+					<hr>
+					<button id="geolocationButton">Get location</button>
+					<div class="successmessage"><i class="fa fa-check"></i> Well done</div>
+				</div>
+			</div>
+		</div>
+		<!-- PLUG3: Dialogs -->
+		<div data-role="page" id="plug3" >
+			<div data-role="main" class="ui-content" data-theme="b">
+				<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+					<div data-role="navbar">
+						<ul data-theme="b">
+							<li><a href="#plugins" data-transition="slide" data-direction="reverse"><i class="fa fa-bars"></i> Plugins</a></li>
+							<li><a href="#plug4" data-transition="slide">Vibration <i class="fa fa-arrow-right"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="docdetails">
+					<h1>Dialogs</h1>
+					<hr>
+						<h3>Alert</h3>
+						<button id="alert"><i class='fa fa-bell-o'></i> Alert me</button>
+						<h3>Confirm</h3>
+						<button id="confirm"><i class='fa fa-bell-o'></i> confirm me</button>
+						<h3>Prompt</h3>
+						<button id="prompt"><i class='fa fa-bell-o'></i> Prompt me</button>
+						<h3>Beep</h3>
+						<button id="beep"><i class='fa fa-bell-o'></i> Beep me</button>
+						<div class="successmessage"><i class="fa fa-check"></i> Well done</div>
+				</div>
+			</div>
+		</div>
+		<!-- PLUG4: Vibration -->
+		<div data-role="page" id="plug4" >
+			<div data-role="main" class="ui-content" data-theme="b">
+				<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+					<div data-role="navbar">
+						<ul data-theme="b">
+							<li><a href="#plugins" data-transition="slide" data-direction="reverse"><i class="fa fa-bars"></i> Plugins</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="docdetails">
+					<h1>Vibration</h1>
+					<hr>
+						<button id="buzzer"><i class='fa fa-bullseye'></i> Buzzer me</button>
+						<div class="successmessage"><i class="fa fa-check"></i> Well done</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ~~~~~~~~~~~~~~~~~~~ -->
+		<!-- ~~~ CONTENT END ~~~ -->
+		<!-- ~~~~~~~~~~~~~~~~~~~ -->
+
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript">
+			app.initialize();
+		</script>
+	</body>
+</html>

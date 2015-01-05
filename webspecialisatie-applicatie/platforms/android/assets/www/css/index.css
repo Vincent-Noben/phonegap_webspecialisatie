@@ -1,0 +1,123 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    /* text-transform:uppercase; */
+    width:100%;
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+.active {
+    color: #33B5E5 !important;
+}
+
+/* NATIVE DROID OVERRIDE */
+.ui-header {
+    min-height: 0 !important;
+    border-top: 0 !important;
+}
+.ui-header .ui-btn:active, .ui-header .ui-btn:hover {
+    color: inherit !important;
+    background-color: inherit !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+hr {
+    margin: 0 !important;
+}
+
+.docdetails h1 {
+    background-color: #6DCAEC;
+    color: white;
+    margin: 0px !important;
+    padding: 10px 0;
+    text-shadow: none;
+    font-weight: 300 !important;
+    height: 26px;
+    line-height: 26px;
+}
+.docdetails ul {
+    padding-right: 20px;
+}
+.docdetails ul li {
+    margin: 10px 0;
+    list-style-type: square;
+}
+.docdetails .successmessage {
+    margin-left: -20px;
+    list-style-type: none;
+    background-color: #B6DB49;
+    text-shadow: none;
+    text-align: center;
+    padding: 10px 0;
+}
+
+pre {
+    text-transform: none;
+    font-style: italic;
+    margin-left: -20px;
+}
+
+.PGimage {
+    margin: 3%;
+    padding: 2%;
+    border-radius: 5px;
+    background-color: #DDD;
+}

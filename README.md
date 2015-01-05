@@ -6,10 +6,20 @@ Folder voor mijn phonegap/cordova web specialisatie
 Logboek & planning
 ==================
 
+Periode 1
+---------
 * Week 1
-- Test
+- Informatie i.v.m. vak en opdracht
 * Week 2
+- Opzoekwerk in verband met interessante onderwerpen
 * Week 3
+- Onderzoek naar Node.js
 * Week 4
+- Onderzoek naar Node.js
 * Week 5
+- Wijziging onderwerp naar Phonegap/cordova
+- Installatie Node.js / Android sdk / ANT
+- Opzetten en testen leeg Phonegap project
 * Week 6
+- Phonegap project opvullen met testdata
+- Presentatie voorbereiden en doen.
